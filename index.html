@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lexicon</title>
+
+    </head>
+    <body>
+        
+        <!-- Между каждой буквой будет пробел. 
+        Есть какое-то свойство CSS которое, может убрать все пробелы внутри элемента.
+        Используй его для .logo -->
+
+        <!--
+            Для того, чтобы установить цвет для отдельной буквы используй .logo > .l, .logo > .e ... 
+        -->
+        <div class="logo">
+            <span class="l">L</span>
+            <span class="e">e</span>
+            <span class="x">x</span>
+            <span class="i">i</span>
+            <span class="c">c</span>
+            <span class="o">o</span>
+            <span class="n">n</span>
+        </div>
+        
+        <form class="main-form">
+            <div class="word">
+                <div><input type="text" name="word"></div>
+
+                <!-- Нужно заменить плюс на иконку .svg -->
+                <div><button class="done">+</button></div>
+            </div>
+
+            <div class="meanings">
+
+                <div class="meaning">
+                    <div><input type="text" name="meaning1"></div>
+                    <div class="type">
+                        <select name="type">
+                            <option value="noun">noun</option>
+                            <option value="verb">verb</option>
+                            <option value="adjective">adjective</option>
+                            <option value="adverb">adverb</option>
+                            <option value="participle">participle</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="meaning">
+                    <div><input type="text" name="meaning2"></div>
+                    <div class="type">
+                        <select name="type">
+                            <option value="noun">noun</option>
+                            <option value="verb">verb</option>
+                            <option value="adjective">adjective</option>
+                            <option value="adverb">adverb</option>
+                            <option value="participle">participle</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hint">
+                <!-- Если хочешь, то можешь заменить на input -->
+                <textarea name="hint"></textarea>
+            </div>
+
+            <!-- для написание стилей для футера используй main-form > footer -->
+            <footer><button class="done">+</button></footer>
+        </form>
+
+        <div class="check-me_section">
+            <div>
+                <button class="check-me_big">check me</button>
+            </div>
+        </div>
+        
+        <div class="days">
+            <!-- стили такие же как и в .logo -->
+            <div class="days-heading">
+                <span class="d">D</span>
+                <span class="a">a</span>
+                <span class="y">y</span>
+                <span class="s">s</span>
+            </div>
+
+            <!-- Далее идет множество элементов .day, каждый из них абсолютно одинаковый.
+            Можешь просто написать стили для одного из них -->
+            
+            <div class="day">
+                <!-- для стилей используй .day > .number -->
+                <div class="number">Day 1</div>
+
+                <div class="card">
+                    <div class="date">
+                        <div class="date-day">Today</div>
+                        <div class="date-yeaer">2021</div>
+                    </div>
+
+                    <div class="words-number">
+                        <!-- .day .card .words-number > .number -->
+                        <span class="number">37</span>
+                        <!-- .day .card .words-number > .words -->
+                        <span class="words">words</span>
+                    </div>
+
+                    <div class="first-words">
+                        <div>alright</div>
+                        <div>attitude</div>
+                        <div>opportunity</div>
+                    </div>
+
+                    <div class="ellipsis">...</div>
+
+                    <!-- .day .card .check-me -->
+                    <div class="check-me">
+                        <!-- .day .card .check-me > button -->
+                        <button>check me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <!-- для стилей используй .day > .number -->
+                <div class="number">Day 1</div>
+
+                <div class="card">
+                    <div class="date">
+                        <div class="date-day">Today</div>
+                        <div class="date-yeaer">2021</div>
+                    </div>
+
+                    <div class="words-number">
+                        <!-- .day .card .words-number > .number -->
+                        <span class="number">37</span>
+                        <!-- .day .card .words-number > .words -->
+                        <span class="words">words</span>
+                    </div>
+
+                    <div class="first-words">
+                        <div>alright</div>
+                        <div>attitude</div>
+                        <div>opportunity</div>
+                    </div>
+
+                    <div class="ellipsis">...</div>
+
+                    <!-- .day .card .check-me -->
+                    <div class="check-me">
+                        <!-- .day .card .check-me > button -->
+                        <button>check me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <!-- для стилей используй .day > .number -->
+                <div class="number">Day 1</div>
+
+                <div class="card">
+                    <div class="date">
+                        <div class="date-day">Today</div>
+                        <div class="date-yeaer">2021</div>
+                    </div>
+
+                    <div class="words-number">
+                        <!-- .day .card .words-number > .number -->
+                        <span class="number">37</span>
+                        <!-- .day .card .words-number > .words -->
+                        <span class="words">words</span>
+                    </div>
+
+                    <div class="first-words">
+                        <div>alright</div>
+                        <div>attitude</div>
+                        <div>opportunity</div>
+                    </div>
+
+                    <div class="ellipsis">...</div>
+
+                    <!-- .day .card .check-me -->
+                    <div class="check-me">
+                        <!-- .day .card .check-me > button -->
+                        <button>check me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <!-- для стилей используй .day > .number -->
+                <div class="number">Day 1</div>
+
+                <div class="card">
+                    <div class="date">
+                        <div class="date-day">Today</div>
+                        <div class="date-yeaer">2021</div>
+                    </div>
+
+                    <div class="words-number">
+                        <!-- .day .card .words-number > .number -->
+                        <span class="number">37</span>
+                        <!-- .day .card .words-number > .words -->
+                        <span class="words">words</span>
+                    </div>
+
+                    <div class="first-words">
+                        <div>alright</div>
+                        <div>attitude</div>
+                        <div>opportunity</div>
+                    </div>
+
+                    <div class="ellipsis">...</div>
+
+                    <!-- .day .card .check-me -->
+                    <div class="check-me">
+                        <!-- .day .card .check-me > button -->
+                        <button>check me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <!-- для стилей используй .day > .number -->
+                <div class="number">Day 1</div>
+
+                <div class="card">
+                    <div class="date">
+                        <div class="date-day">Today</div>
+                        <div class="date-yeaer">2021</div>
+                    </div>
+
+                    <div class="words-number">
+                        <!-- .day .card .words-number > .number -->
+                        <span class="number">37</span>
+                        <!-- .day .card .words-number > .words -->
+                        <span class="words">words</span>
+                    </div>
+
+                    <div class="first-words">
+                        <div>alright</div>
+                        <div>attitude</div>
+                        <div>opportunity</div>
+                    </div>
+
+                    <div class="ellipsis">...</div>
+
+                    <!-- .day .card .check-me -->
+                    <div class="check-me">
+                        <!-- .day .card .check-me > button -->
+                        <button>check me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <!-- для стилей используй .day > .number -->
+                <div class="number">Day 1</div>
+
+                <div class="card">
+                    <div class="date">
+                        <div class="date-day">Today</div>
+                        <div class="date-yeaer">2021</div>
+                    </div>
+
+                    <div class="words-number">
+                        <!-- .day .card .words-number > .number -->
+                        <span class="number">37</span>
+                        <!-- .day .card .words-number > .words -->
+                        <span class="words">words</span>
+                    </div>
+
+                    <div class="first-words">
+                        <div>alright</div>
+                        <div>attitude</div>
+                        <div>opportunity</div>
+                    </div>
+
+                    <div class="ellipsis">...</div>
+
+                    <!-- .day .card .check-me -->
+                    <div class="check-me">
+                        <!-- .day .card .check-me > button -->
+                        <button>check me</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
