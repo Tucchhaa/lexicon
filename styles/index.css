@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&family=Roboto+Slab:wght@500;700&family=Roboto:wght@500;700&display=swap');
+
+body {
+    background-color: #131313;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Roboto Slab";
+}
+
+.no-spacing {
+    word-spacing: -11px;
+}
+
+button, select {
+    cursor: pointer;
+}

@@ -3,6 +3,9 @@
         <meta charset="utf-8">
         <title>Lexicon</title>
 
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/main-form.css">
+        <link rel="stylesheet" href="./styles/main-page.css">
     </head>
     <body>
         
@@ -13,30 +16,30 @@
         <!--
             Для того, чтобы установить цвет для отдельной буквы используй .logo > .l, .logo > .e ... 
         -->
-        <div class="logo">
-            <span class="l">L</span>
-            <span class="e">e</span>
-            <span class="x">x</span>
-            <span class="i">i</span>
-            <span class="c">c</span>
-            <span class="o">o</span>
-            <span class="n">n</span>
+        <div class="logo no-spacing lexicon color-group">
+            <span class="l" data-prop="color">L</span>
+            <span class="e" data-prop="color">e</span>
+            <span class="x" data-prop="color">x</span>
+            <span class="i" data-prop="color">i</span>
+            <span class="c" data-prop="color">c</span>
+            <span class="o" data-prop="color">o</span>
+            <span class="n" data-prop="color">n</span>
         </div>
         
-        <form class="main-form">
+        <form class="main-form container color-group">
             <div class="word">
-                <div><input type="text" name="word"></div>
+                <div><input type="text" name="word" autocomplete="off" data-prop="borderColor"></div>
 
                 <!-- Нужно заменить плюс на иконку .svg -->
-                <div><button class="done">+</button></div>
+                <div><button class="done" type="submit" data-prop="backgroundColor" data-color-as="prev">+</button></div>
             </div>
 
             <div class="meanings">
 
-                <div class="meaning">
-                    <div><input type="text" name="meaning1"></div>
+                <div class="meaning" data-index="0">
+                    <div><input type="text" name="meaning0" autocomplete="off" data-prop="borderColor"></div>
                     <div class="type">
-                        <select name="type">
+                        <select name="type0" data-prop="borderColor" data-color-as="prev">
                             <option value="noun">noun</option>
                             <option value="verb">verb</option>
                             <option value="adjective">adjective</option>
@@ -45,248 +48,45 @@
                         </select>
                     </div>
                 </div>
-                
-                <div class="meaning">
-                    <div><input type="text" name="meaning2"></div>
-                    <div class="type">
-                        <select name="type">
-                            <option value="noun">noun</option>
-                            <option value="verb">verb</option>
-                            <option value="adjective">adjective</option>
-                            <option value="adverb">adverb</option>
-                            <option value="participle">participle</option>
-                        </select>
-                    </div>
-                </div>
+
+                <!-- этот элемент используется в js. Для него стили не нужны -->
+                <div id="insert"></div>
             </div>
 
             <div class="hint">
                 <!-- Если хочешь, то можешь заменить на input -->
-                <textarea name="hint"></textarea>
+                <textarea data-prop="borderColor" name="hint"></textarea>
             </div>
 
             <!-- для написание стилей для футера используй main-form > footer -->
-            <footer><button class="done">+</button></footer>
+            <footer><button data-prop="backgroundColor" class="done" type="submit">+</button></footer>
         </form>
 
-        <div class="check-me_section">
+        <div class="check-me_section container">
             <div>
                 <button class="check-me_big">check me</button>
             </div>
         </div>
         
-        <div class="days">
+        <div class="days container">
             <!-- стили такие же как и в .logo -->
-            <div class="days-heading">
-                <span class="d">D</span>
-                <span class="a">a</span>
-                <span class="y">y</span>
-                <span class="s">s</span>
+            <div class="days-heading logo no-spacing color-group">
+                <span class="d" data-prop="color">D</span>
+                <span class="a" data-prop="color">a</span>
+                <span class="y" data-prop="color">y</span>
+                <span class="s" data-prop="color">s</span>
             </div>
 
-            <!-- Далее идет множество элементов .day, каждый из них абсолютно одинаковый.
-            Можешь просто написать стили для одного из них -->
-            
-            <div class="day">
-                <!-- для стилей используй .day > .number -->
-                <div class="number">Day 1</div>
-
-                <div class="card">
-                    <div class="date">
-                        <div class="date-day">Today</div>
-                        <div class="date-yeaer">2021</div>
-                    </div>
-
-                    <div class="words-number">
-                        <!-- .day .card .words-number > .number -->
-                        <span class="number">37</span>
-                        <!-- .day .card .words-number > .words -->
-                        <span class="words">words</span>
-                    </div>
-
-                    <div class="first-words">
-                        <div>alright</div>
-                        <div>attitude</div>
-                        <div>opportunity</div>
-                    </div>
-
-                    <div class="ellipsis">...</div>
-
-                    <!-- .day .card .check-me -->
-                    <div class="check-me">
-                        <!-- .day .card .check-me > button -->
-                        <button>check me</button>
-                    </div>
-                </div>
+            <div id="days-container">
+                
             </div>
-
-            <div class="day">
-                <!-- для стилей используй .day > .number -->
-                <div class="number">Day 1</div>
-
-                <div class="card">
-                    <div class="date">
-                        <div class="date-day">Today</div>
-                        <div class="date-yeaer">2021</div>
-                    </div>
-
-                    <div class="words-number">
-                        <!-- .day .card .words-number > .number -->
-                        <span class="number">37</span>
-                        <!-- .day .card .words-number > .words -->
-                        <span class="words">words</span>
-                    </div>
-
-                    <div class="first-words">
-                        <div>alright</div>
-                        <div>attitude</div>
-                        <div>opportunity</div>
-                    </div>
-
-                    <div class="ellipsis">...</div>
-
-                    <!-- .day .card .check-me -->
-                    <div class="check-me">
-                        <!-- .day .card .check-me > button -->
-                        <button>check me</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="day">
-                <!-- для стилей используй .day > .number -->
-                <div class="number">Day 1</div>
-
-                <div class="card">
-                    <div class="date">
-                        <div class="date-day">Today</div>
-                        <div class="date-yeaer">2021</div>
-                    </div>
-
-                    <div class="words-number">
-                        <!-- .day .card .words-number > .number -->
-                        <span class="number">37</span>
-                        <!-- .day .card .words-number > .words -->
-                        <span class="words">words</span>
-                    </div>
-
-                    <div class="first-words">
-                        <div>alright</div>
-                        <div>attitude</div>
-                        <div>opportunity</div>
-                    </div>
-
-                    <div class="ellipsis">...</div>
-
-                    <!-- .day .card .check-me -->
-                    <div class="check-me">
-                        <!-- .day .card .check-me > button -->
-                        <button>check me</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="day">
-                <!-- для стилей используй .day > .number -->
-                <div class="number">Day 1</div>
-
-                <div class="card">
-                    <div class="date">
-                        <div class="date-day">Today</div>
-                        <div class="date-yeaer">2021</div>
-                    </div>
-
-                    <div class="words-number">
-                        <!-- .day .card .words-number > .number -->
-                        <span class="number">37</span>
-                        <!-- .day .card .words-number > .words -->
-                        <span class="words">words</span>
-                    </div>
-
-                    <div class="first-words">
-                        <div>alright</div>
-                        <div>attitude</div>
-                        <div>opportunity</div>
-                    </div>
-
-                    <div class="ellipsis">...</div>
-
-                    <!-- .day .card .check-me -->
-                    <div class="check-me">
-                        <!-- .day .card .check-me > button -->
-                        <button>check me</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="day">
-                <!-- для стилей используй .day > .number -->
-                <div class="number">Day 1</div>
-
-                <div class="card">
-                    <div class="date">
-                        <div class="date-day">Today</div>
-                        <div class="date-yeaer">2021</div>
-                    </div>
-
-                    <div class="words-number">
-                        <!-- .day .card .words-number > .number -->
-                        <span class="number">37</span>
-                        <!-- .day .card .words-number > .words -->
-                        <span class="words">words</span>
-                    </div>
-
-                    <div class="first-words">
-                        <div>alright</div>
-                        <div>attitude</div>
-                        <div>opportunity</div>
-                    </div>
-
-                    <div class="ellipsis">...</div>
-
-                    <!-- .day .card .check-me -->
-                    <div class="check-me">
-                        <!-- .day .card .check-me > button -->
-                        <button>check me</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="day">
-                <!-- для стилей используй .day > .number -->
-                <div class="number">Day 1</div>
-
-                <div class="card">
-                    <div class="date">
-                        <div class="date-day">Today</div>
-                        <div class="date-yeaer">2021</div>
-                    </div>
-
-                    <div class="words-number">
-                        <!-- .day .card .words-number > .number -->
-                        <span class="number">37</span>
-                        <!-- .day .card .words-number > .words -->
-                        <span class="words">words</span>
-                    </div>
-
-                    <div class="first-words">
-                        <div>alright</div>
-                        <div>attitude</div>
-                        <div>opportunity</div>
-                    </div>
-
-                    <div class="ellipsis">...</div>
-
-                    <!-- .day .card .check-me -->
-                    <div class="check-me">
-                        <!-- .day .card .check-me > button -->
-                        <button>check me</button>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
-
+        
+        <script src="./scripts/painter.js"></script>
+        <script src="./scripts/models.js"></script>
+        <script src="./scripts/storage.js"></script>
+        <script src="./scripts/mainFormHandler.js"></script>
+        <script src="./scripts/daysViewer.js"></script>
     </body>
 </html>

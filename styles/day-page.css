@@ -1,0 +1,64 @@
+#back-to-home {
+    font-family: "Roboto Mono";
+    color: white;
+    font-variant: small-caps;
+    cursor: pointer;
+    text-transform: lowercase;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    background-color: #131313;
+    z-index: 10;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.day-logo {
+    margin: 50px 0;
+}
+
+.word-block {
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+    font-family: "Roboto Mono";
+}
+
+.word-block::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 1px solid white;
+    width: 27%;
+    left: 20.5%;
+    bottom: -20px;
+}
+
+.meaning {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.meaning .left {
+    width: 300px;
+}
+
+.meaning .word {
+    font-size: 1.2em;
+}
+
+.meaning .translate {
+    font-size: 1.1em;
+}
+
+.meaning .type {
+    padding-left: 60px;
+    font-size: 0.9em;
+    margin-top: -3px;
+}
+
+.hint {
+    font-size: 0.85em;
+}
+
